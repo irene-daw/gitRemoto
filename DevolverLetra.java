@@ -8,7 +8,7 @@ package ut06tarea1.ejercicio1;
 import java.util.Scanner;
 
 /**
- *
+ * Clase que devuelve un caracter determinado de una cadena
  * @author Irene González Cantera
  */
 public class DevolverLetra {
