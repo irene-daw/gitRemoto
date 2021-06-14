@@ -9,21 +9,30 @@ import java.util.Scanner;
 
 /**
  *
- * @author AlumnoDAW
+ * @author Irene González Cantera
  */
 public class DevolverLetra {
 
     /**
+     * Método principal de la clase
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        
-        //objeto escaner
-        Scanner sc = new Scanner(System.in);
-        //objeto String
+	/**
+	 * Objeto Scanner 
+         */
+	Scanner sc;        
+	
+	/**
+	 * Variable de tipo String que recoge la cadena que el usuario introduzca
+	 */
+	String cadena;
+
+        sc = new Scanner(System.in);
         System.out.println("Introduce la cadena: ");
-        String cadena = sc.nextLine();
-        //capturamos el error
+	cadena = sc.nextLine();
+        
+	//capturamos el error
         try{
             //mostrar la letra con el método charAt
             System.out.println(cadena.charAt(7));
@@ -32,10 +41,5 @@ public class DevolverLetra {
             System.out.println("Has intentado recupersr una posición de la "
                     + "cadena de caracteres que no existe.");
         }
-        
-        
-        
-        
     }
-    
 }
